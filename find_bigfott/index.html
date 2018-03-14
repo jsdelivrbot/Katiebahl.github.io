@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Find Bigfoot </title>
+        <style>
+            body {
+                background-image: url("assets/forest.jpg");
+            }
+            img {
+                Position: absolute;
+                left: 100px;
+                top: 150px;
+            }
+        </style>
+        <script>
+            function loadBigFoot() {
+                document.getElementbyId("bigFoot").src = "assets/bigfoot.png";
+            }
+        </script>
+    </head>
+    <body onload="loadBigFoot()">
+        <img id="bigFoot" onclick="alert("YOU WIN!You have found Bigfoot!");">
+    </body>
+</html>

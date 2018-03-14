@@ -1,0 +1,19 @@
+img {
+    width: 200px;
+}
+body {
+    text-align: center;
+    font-family: "pacifico";
+}
+head {
+    text-align: Left;
+    Font-family: "arial";
+}
+h1,
+p {
+    text-align: center;
+}
+h2,
+p {
+    text-align: left
+}
