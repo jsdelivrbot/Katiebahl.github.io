@@ -3,11 +3,13 @@ var playerImage;
 var enemy; 
 var enemyImage;
 var isGameOver; 
+var backgroundImage; 
 
 function preload () {
     playerImage = loadImage ("https://surrogate.hackedu.us/i.imgur.comN5uCbDu.png");
     enemyImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/OdL0XPt.png");
-} 
+    backgroundImage = loadImage("https://surrogate.hackedu.us/i.imgur.com/aKQOg3G.png");
+}
 
 function setup() {
     isGameOver = false; 
@@ -16,10 +18,11 @@ function setup() {
     player.addImage(playerImage);
     enemy = createSprite(width/2,0,10,30);
     enemy.addImage(enemyImage);
+    enemy.rotationSpeed = 4.0;
 }
 
 function draw() {
-    if(isGameOver) {
+    if (isGameOver) {
         gameOver();
     } else {
         if (enemy.overlap(player)) {
